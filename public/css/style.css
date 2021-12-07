@@ -1,0 +1,134 @@
+html {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.first {
+  background-color: #bfdcf1;
+  top: 50%;
+  left: 50%;
+  color: #ffffff;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  height: calc(100vh - 30rem);
+  width: 80rem;
+  border-radius: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.first #new {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 4rem;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Poppins", "Oswald", sans-serif;
+  font-size: 4rem;
+}
+
+.first .dice {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 70rem;
+}
+
+.first .dice img {
+  border-radius: 2rem;
+  height: 20rem;
+  width: 20rem;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.first .dice .yes {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #0000ff;
+  border-radius: 2.5rem;
+  height: 4.5rem;
+  font-size: 1rem;
+  font-family: "Poppins", "Oswald", sans-serif;
+}
+
+.first .no {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.first .no button {
+  width: 20rem;
+  height: 7rem;
+  border-radius: 3rem;
+  color: #0000ff;
+  background-color: #ffffff;
+  border: solid 0.1rem #0000ff;
+  font-size: 3rem;
+  font-family: "Poppins", "Oswald", sans-serif;
+}
+
+.first .no button:hover {
+  background-color: #e8e8eb;
+  color: #08089c;
+}
+/*# sourceMappingURL=style.css.map */

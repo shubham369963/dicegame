@@ -1,0 +1,84 @@
+@import "_var.scss";
+@import "_mixin.scss";
+
+
+html{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.first {
+  background-color: $bg-color;
+  top: 50%;
+  left: 50%;
+  color: $bg-txt-color;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  height: calc(100vh - 30rem);
+  width: 80rem;
+  border-radius: 1.5rem;
+  @include flex(center, column);
+
+
+
+  #new{
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family:$font-fam;
+    font-size: 4rem;
+    }  
+
+.dice {
+  @include flex(space-around, row);
+  height: max-content;
+  width: 70rem;
+
+
+  img{
+        border-radius: 2rem;
+        height: 20rem;
+        width: 20rem;
+        margin-bottom: 1.5rem;
+        overflow: hidden;
+        }
+
+          .yes {
+ @include flex(center, column);
+  background-color: $btn-bg-color;
+  border-radius: 2.5rem;
+  height: 4.5rem;
+  font-size: 1rem;
+  font-family: $font-fam;
+}
+}
+
+
+
+.no {
+  @include flex(center, row);
+
+  button {
+  width: 20rem;
+  height: 7rem;
+  border-radius: 3rem;
+ 
+  color: $btn-bg-color;
+  background-color: $bg-txt-color;
+  border: solid 0.1rem $btn-bg-color;
+  font-size: 3rem;
+  font-family: $font-fam;
+
+
+  &:hover{
+    background-color: #e8e8eb;
+    color: #08089c;
+    }
+}
+}
+}
