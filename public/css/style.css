@@ -4,6 +4,22 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 62.5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 .first {
@@ -14,8 +30,8 @@ html {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   position: absolute;
-  height: calc(100vh - 30rem);
-  width: 80rem;
+  height: calc(100vh - 30vh);
+  width: 70rem;
   border-radius: 1.5rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -26,18 +42,63 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
+@media (max-width: 768px) {
+  .first {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: 50rem;
+    font-size: 5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 468px) {
+  .first {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: 50rem;
+    font-size: 5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .first #new {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 4rem;
+  height: 10rem;
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -46,7 +107,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Poppins", "Oswald", sans-serif;
-  font-size: 4rem;
+  font-size: 7rem;
 }
 
 .first .dice {
@@ -58,7 +119,6 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -67,6 +127,42 @@ html {
   height: -moz-max-content;
   height: max-content;
   width: 70rem;
+}
+
+@media (max-width: 768px) {
+  .first .dice {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (max-width: 468px) {
+  .first .dice {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .first .dice img {
@@ -87,7 +183,6 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -109,7 +204,6 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;

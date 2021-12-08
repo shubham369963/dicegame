@@ -8,6 +8,9 @@ html{
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
+  @include flex(center, row);
+  display: grid;
+  place-items: center;
 }
 
 .first {
@@ -17,28 +20,44 @@ html{
   color: $bg-txt-color;
   transform: translate(-50%, -50%);
   position: absolute;
-  height: calc(100vh - 30rem);
-  width: 80rem;
+  height: calc(100vh - 30vh);
+  width: 70rem;
   border-radius: 1.5rem;
   @include flex(center, column);
 
-
+  @media (max-width: 768px) {
+    height: max-content;
+    width: 50rem;
+    font-size: 5rem;
+    @include flex(center, column);
+  }
+  @media (max-width: 468px) {
+    height: max-content;
+    width: 50rem;
+    font-size: 5rem;
+    @include flex(center, column);
+  }
 
   #new{
     display: flex;
-    height: 4rem;
+    height: 10rem;
     width: 100%;
     justify-content: center;
     align-items: center;
     font-family:$font-fam;
-    font-size: 4rem;
+    font-size: 7rem;
     }  
 
 .dice {
   @include flex(space-around, row);
   height: max-content;
   width: 70rem;
-
+  @media (max-width: 768px) {
+    @include flex(center, row);
+  }
+  @media (max-width: 468px) {
+    @include flex(center, row);
+  }
 
   img{
         border-radius: 2rem;
